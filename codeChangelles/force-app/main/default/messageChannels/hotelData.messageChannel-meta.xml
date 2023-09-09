@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is a Lightning Message Channel carrying data being published by partnerSearchResult component</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>This is the record Id of hotel selected by the user in partnerSearchResult component</description>
+        <fieldName>hotelId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the hotel name selected by the user in partnerSearchResult component</description>
+        <fieldName>hotelName</fieldName>
+    </lightningMessageFields>
+    <masterLabel>Partner Hotel Data</masterLabel>
+</LightningMessageChannel>

@@ -1,0 +1,25 @@
+<template>
+
+    <lightning-layout horizontal-align="center">
+        <lightning-layout-item padding="horizontal-small">
+            <!--To show app description-->
+            <lightning-layout>
+                <lightning-layout-item>
+                    <p class="slds-p-horizontal_small">{szdesc}</p>
+                </lightning-layout-item>
+            </lightning-layout>
+
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="6">
+            <!--To show partner hotel location dropdown-->
+            <lightning-layout>
+                <lightning-layout-item>
+                    <lightning-combobox name="progress" label="Partner Location" value=""
+                        placeholder="Select Partner Location" options={partnerlocations} onchange={handleLocationChange}
+                        variant="label-hidden" required></lightning-combobox>
+                </lightning-layout-item>
+            </lightning-layout>
+
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <!--Data Binding : Bringing values from JS-->
+    <lightning-card  title={sztitle} class="slds-p-horizontal_small">
+        
+        
+        <p>
+        <!--Add Partner Location Search Child Component Inside Left Containner Parent Component-->
+        <c-partner-location-search onuserselectedlocation={handleuserselectedlocation}></c-partner-location-search>
+        </p>
+        
+    </lightning-card>
+    <lightning-card  title='Partner Hotels' class="slds-p-horizontal_small">
+         <!--Add Partner Search Result Child Component Inside Left Containner Parent Component-->
+         <c-partner-search-result partner-location={strPartnerLocation} parent-component-name={strCompName}></c-partner-search-result>
+
+    </lightning-card>
+    
+</template>
